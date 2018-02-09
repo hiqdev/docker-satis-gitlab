@@ -8,10 +8,16 @@
 
 ## Installation
 
-The preferred way to install this project is through [composer](http://getcomposer.org/download/).
+### Building
 
 ```sh
-php composer.phar create-project "hiqdev/docker-satis-gitlab:*" directory2install
+docker build -t gitlab-satis .
+```
+
+### Testing
+
+```sh
+docker run --rm -it --env-file .env gitlab-satis:latest
 ```
 
 ## License
@@ -19,4 +25,4 @@ php composer.phar create-project "hiqdev/docker-satis-gitlab:*" directory2instal
 This project is released under the terms of the BSD-3-Clause [license](LICENSE).
 Read more [here](http://choosealicense.com/licenses/bsd-3-clause).
 
-Copyright © 2017-2018, HiQDev (http://hiqdev.com/)
+Copyright © 2018, HiQDev (http://hiqdev.com/)
