@@ -1,0 +1,5 @@
+package:
+    type:       project
+    name:       docker-satis-gitlab
+    title:      Docker Satis Gitlab
+    keywords:   docker, satis, gitlab
