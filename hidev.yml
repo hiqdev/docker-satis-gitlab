@@ -3,3 +3,10 @@ package:
     name:       docker-satis-gitlab
     title:      Docker Satis Gitlab
     keywords:   docker, satis, gitlab
+
+readme:
+    sections:
+        - Installation
+        - Troubleshooting
+        - Acknowledges
+        - License

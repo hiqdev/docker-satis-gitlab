@@ -1,0 +1,2 @@
+- [Composer Satis project](https://github.com/composer/satis)
+- [GitLab Satis project](https://github.com/mborne/satis-gitlab)

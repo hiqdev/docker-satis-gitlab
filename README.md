@@ -63,7 +63,7 @@ docker run --env-file=.env -v /home/username/docker/satis-gitlab/config:/app/con
 In a few seconds you will see new files in `web` and `config` directories.
 Configure a web server with webroot in `web` directory and you are ready to go!
 
-### Troubleshooting
+## Troubleshooting
 
 If you don't see new files in `web` dir – attach to the container output to start troubleshooting:
 
