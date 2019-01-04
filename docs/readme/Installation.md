@@ -37,17 +37,21 @@ We suggest to create a separate GitLab user for this purpose and add it to repos
 
 #### Create additional config file:
 
-This JSON file will merged with the resulting Satis config.
+This JSON file will used instead of [original SATIS config template](https://github.com/mborne/satis-gitlab/blob/master/src/MBO/SatisGitlab/Resources/default-template.json).
 Create it empty by default and fill it when you need to put anything extra in the Satis config.
 
 ```sh
-echo '{}' > config/prototype.json
+wget -O config/template.json https://raw.githubusercontent.com/mborne/satis-gitlab/master/src/MBO/SatisGitlab/Resources/default-template.json
 ```
 
 #### Run Docker container:
 
 ```sh
-docker run --env-file=.env -v /home/username/docker/satis-gitlab/config:/app/config -v /home/username/docker/satis-gitlab/web:/app/web satis-gitlab
+docker run \
+    --env-file=.env \
+    -v /home/username/docker/satis-gitlab/config:/app/config \
+    -v /home/username/docker/satis-gitlab/web:/app/web \
+   satis-gitlab
 ```
 
 In a few seconds you will see new files in `web` and `config` directories.
